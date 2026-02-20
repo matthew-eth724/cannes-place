@@ -17,20 +17,13 @@ const Footer = () => {
                 <div className="footer-section">
                     <h4>Contact Us</h4>
                     <ul className="footer-contact">
-                        <li><MapPin size={18} /> 123 Luxury Lane, Event Est.</li>
-                        <li><Phone size={18} /> +234 812 345 6789</li>
+                        <li><MapPin size={18} /> Victoria Island, Lagos</li>
+                        <li><Phone size={18} /> +234 800 CANNES</li>
                         <li><Mail size={18} /> events@cannesplace.com</li>
                     </ul>
                 </div>
 
-                <div className="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for exclusive event invites and news.</p>
-                    <div className="newsletter-form">
-                        <input type="email" placeholder="Your Email" />
-                        <button>Join</button>
-                    </div>
-                </div>
+
             </div>
             <div className="footer-bottom">
                 <p>&copy; 2026 Cannes Place. All rights reserved. | <a href="#">Privacy Policy</a></p>

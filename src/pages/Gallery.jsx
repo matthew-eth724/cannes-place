@@ -1,11 +1,17 @@
 import './Gallery.css';
 
+// Import local gallery assets
+import galaImg from '../assets/gallery/gala.jpg';
+import corporateImg from '../assets/gallery/corporate.jpg';
+import socialImg from '../assets/gallery/ibrahim-boran-m8YjB0noWiY-unsplash.jpg';
+import fineDiningImg from '../assets/gallery/premium_photo-1679503585289-c02467981894.avif';
+
 const Gallery = () => {
     const images = [
-        { url: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80', title: 'Grand Ballroom' },
-        { url: 'https://images.unsplash.com/photo-1505232458567-422bc7297e68?auto=format&fit=crop&w=800&q=80', title: 'Outdoor Garden' },
-        { url: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=800&q=80', title: 'Luxury Reception' },
-        { url: 'https://images.unsplash.com/photo-1544145945-f904253d0c71?auto=format&fit=crop&w=800&q=80', title: 'Fine Dining' },
+        { url: galaImg, title: 'Grand Ballroom' },
+        { url: corporateImg, title: 'Corporate Excellence' },
+        { url: socialImg, title: 'Social Celebrations' },
+        { url: fineDiningImg, title: 'Fine Dining' },
         { url: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80', title: 'Floral Arches' },
         { url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=80', title: 'Party Atmosphere' },
     ];

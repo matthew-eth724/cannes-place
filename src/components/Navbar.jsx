@@ -37,7 +37,9 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className="nav-item">
-                        <button className="nav-cta">Book Now</button>
+                        <Link to="/booking" onClick={() => setIsOpen(false)}>
+                            <button className="nav-cta">Book Now</button>
+                        </Link>
                     </li>
                 </ul>
             </div>

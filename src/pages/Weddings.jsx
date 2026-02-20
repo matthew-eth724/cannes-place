@@ -1,5 +1,10 @@
 import './Weddings.css';
+import { Link } from 'react-router-dom';
 import { Heart, Users, MapPin, CheckCircle } from 'lucide-react';
+
+// Import local wedding assets
+import weddingHeroImg from '../assets/wedding/images.jpg';
+import weddingIntroImg from '../assets/wedding/king-lamar-fotografia-g2axXjYTm3o-unsplash.jpg';
 
 const Weddings = () => {
     const packages = [
@@ -22,7 +27,14 @@ const Weddings = () => {
 
     return (
         <div className="weddings-page">
-            <header className="page-hero weddings-hero">
+            <header
+                className="page-hero weddings-hero"
+                style={{
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${weddingHeroImg})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center 20%'
+                }}
+            >
                 <div className="hero-content">
                     <h1>Eternal <span>Love</span></h1>
                     <p>The perfect beginning to your forever.</p>
@@ -42,7 +54,7 @@ const Weddings = () => {
                             </div>
                         </div>
                         <div className="intro-image">
-                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Wedding" />
+                            <img src={weddingIntroImg} alt="Wedding" />
                         </div>
                     </div>
                 </div>
@@ -63,7 +75,9 @@ const Weddings = () => {
                                     <li key={f}><CheckCircle size={18} /> {f}</li>
                                 ))}
                             </ul>
-                            <button className="pkg-btn">Inquire Now</button>
+                            <Link to="/booking">
+                                <button className="pkg-btn">Inquire Now</button>
+                            </Link>
                         </div>
                     ))}
                 </div>
