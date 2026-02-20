@@ -5,18 +5,18 @@ const Weddings = () => {
     const packages = [
         {
             name: 'Essential Elegance',
-            price: '$5,000',
+            price: '500,000 NGN',
             features: ['Venue for 6 hours', 'Basic Decor', 'Photography (4 hrs)', 'Dedicated Coordinator']
         },
         {
             name: 'Luxury Celebration',
-            price: '$12,000',
-            features: ['Full Day Access', 'Premium Decor', 'Gourmet Catering', 'Full Photography & Video', 'Live Music']
+            price: '1,200,000 NGN',
+            features: ['Full Day Access', 'Premium Decor', 'Complimentary Catering Service', 'Full Photography & Video', 'Live Music']
         },
         {
             name: 'Imperial Grandeur',
-            price: '$25,000',
-            features: ['Multi-day Access', 'Custom Set Design', 'Michelin Star Catering', 'Full Media Team', 'Bridal Suite']
+            price: '2,500,000 NGN',
+            features: ['Multi-day Access', 'Custom Set Design', 'Complimentary Catering Service', 'Full Media Team', 'Bridal Suite']
         }
     ];
 
