@@ -1,0 +1,180 @@
+.weddings-page {
+    width: 100%;
+}
+
+.page-hero {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 24px;
+}
+
+.weddings-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1460364154652-f871597679da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+}
+
+.page-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 16px;
+}
+
+.page-hero h1 span {
+    color: var(--primary-gold);
+}
+
+.wedding-intro {
+    padding: 100px 24px;
+    background-color: var(--bg-dark);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+}
+
+.intro-text h2 span {
+    color: var(--primary-gold);
+}
+
+.intro-text p {
+    color: var(--text-gray);
+    margin-bottom: 32px;
+}
+
+.stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-item svg {
+    color: var(--primary-gold);
+}
+
+.stat-item span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.packages {
+    padding: 100px 24px;
+    background-color: var(--bg-darker);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background-color: var(--card-bg);
+    padding: 50px 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(236, 182, 19, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.package-card:hover {
+    border-color: var(--primary-gold);
+    transform: scale(1.02);
+}
+
+.package-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-gold);
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price span {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    font-weight: 400;
+}
+
+.package-card ul {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.package-card li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.package-card li svg {
+    color: var(--primary-gold);
+    flex-shrink: 0;
+}
+
+.pkg-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid var(--primary-gold);
+    color: var(--primary-gold);
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pkg-btn:hover {
+    background-color: var(--primary-gold);
+    color: var(--bg-dark);
+}
+
+@media screen and (max-width: 992px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .stats {
+        justify-content: center;
+    }
+}
