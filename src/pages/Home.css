@@ -235,6 +235,53 @@
     }
 }
 
+/* Final Booking CTA Styling */
+.booking-cta-section {
+    padding: 120px 24px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.booking-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+.booking-cta-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.booking-cta-content h2 span {
+    color: var(--primary-gold);
+    display: block;
+}
+
+.booking-cta-content p {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .booking-cta-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .booking-cta-content {
+        padding: 40px 20px;
+    }
+}
+
 .services {
     padding: 100px 24px;
     background-color: var(--bg-darker);

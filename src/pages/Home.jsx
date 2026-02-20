@@ -108,6 +108,17 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="booking-cta-section">
+                <div className="container">
+                    <div className="booking-cta-content glass-panel">
+                        <h2>Ready to Create <span>Something Extraordinary?</span></h2>
+                        <p>Whether it's your dream wedding, a corporate milestone, or a grand celebration, our team is ready to bring your vision to life.</p>
+                        <Link to="/booking">
+                            <button className="primary-btn glass-btn">Book Your Event Now</button>
+                        </Link>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
